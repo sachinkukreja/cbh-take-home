@@ -13,6 +13,6 @@ You will be graded on the exhaustiveness and quality of your unit tests, the dep
 This version of code is more readable and cleaner than the orginal because :
 
 1. It uses a funtion to encode the desired output and change in algo to encode can be easily handled, it also makes it more readable because instead of reading the chained the function (.createHash.update.disgest) twice it is now available as an exportable function which accepts any data to encode
-2. reduced number of if else statements make is easier to follow along and using ternary operator also allows for a more readable safe navigation.
+2. reduced number of if else statements make is easier to follow along and using ternary operator also allows for a more readable and safe navigation.
 3. Assigning an initial value to candidate makes it safe (candidiate cannot be null anymore, if there is no input) to return without using another if (or an else) condition.
-4. Since most of the operations were on candidate and operations on candidate arr depedent if there is an input, I wrapped the majority code inside an if(event) condition, which makes ir very easy to read if there is no input, return candidate, whose initial value is TRIVIAL_PARTITION_KEY
+4. Since most of the operations were on candidate and operations on candidate depedent on the input, I wrapped the majority code inside an if(event) condition, which makes ir very easy to read if there is no input, return candidate, whose initial value is TRIVIAL_PARTITION_KEY
