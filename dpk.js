@@ -9,13 +9,12 @@ exports.deterministicPartitionKey = (event) => {
     candidate = event.partitionKey
       ? event.partitionKey
       : this.encode(JSON.stringify(event));
-  }
 
-  candidate =
-    typeof candidate !== "string" ? JSON.stringify(candidate) : candidate;
+    if (typeof candidate !== "string") candidate = JSON.stringify(candidate);
 
-  if (candidate.length > MAX_PARTITION_KEY_LENGTH) {
-    candidate = this.encode(candidate);
+    if (candidate.length > MAX_PARTITION_KEY_LENGTH) {
+      candidate = this.encode(candidate);
+    }
   }
 
   return candidate;
