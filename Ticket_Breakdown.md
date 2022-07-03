@@ -16,8 +16,6 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 
 ## Your Breakdown Here
 
-I am not sure what ticket means, I assume it means a story or a task in the agile workflow and developers will pick it up, to make it easier for developers to read, the "ticket" will have 3 sections : 1) Title , 2) Description, 3)Acceptance Criteria
-
 Each ticket has 3 sections : 1) Title , 2) Description, 3)Acceptance Criteria
 
 # Ticket #1
