@@ -27,6 +27,7 @@ Map Agent's Custom Id to Internal Id
 ### Description
 
 We need the ability for facilities to save their own custom Ids for each agent
+
 **Scope:**
 
 - Create permission to set an agent's custom id ("write_agent_custom_id")
@@ -56,6 +57,7 @@ Show Agent's custom ID
 ### Description
 
 We need the ability for facilitirs to show their agent's custom Id if it was already set
+
 **Scope:**
 
 - Read agents table to fetch the custom id
@@ -78,6 +80,7 @@ Include Agent's Custom Id on reports
 ### Description
 
 We need the ability for facilities to be able to view Agent's custom ID when generating reports
+
 **Scope:**
 
 - Modify 'getShiftsByFacility' function to include agent's custom ID (stored in agents table)
